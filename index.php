@@ -15,10 +15,12 @@
             <div id="logo">
                 <img src="https://dl2.macupdate.com/images/icons256/33033.png?d=1511990622" alt="logo">
             </div>
+            <div class="header-dx">
+                <h1>PHP AJAX DISCHI</h1>
+            </div>
         </header>
         <main>
-            <div class="container">
-
+            <div id="card-container" class="container">
             </div>
         </main>
         <footer>
@@ -30,11 +32,20 @@
         </footer>
 
 
-        <!-- <script id="card-template" type="text/x-handlebars-template">
+        <script id="card-template" type="text/x-handlebars-template">
             <div class="card">
-
+                <div class="card-content">
+                    <div class="copertina">
+                        <img src="{{cover}}" alt="{{titolo}}">
+                    </div>
+                    <div class="text">
+                        <h2>{{titolo}}</h2>
+                        <p>{{autore}}</p>
+                        <span>{{anno}}</span>
+                    </div>
+                </div>
             </div>
-        </script> -->
+        </script>
 
 
         <script src="dist/js/main.js" charset="utf-8"></script>

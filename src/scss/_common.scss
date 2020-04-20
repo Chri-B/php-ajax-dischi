@@ -5,10 +5,30 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
 img {
     height: 100%;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+p,
+span {
+    color: $text_color_two;
+}
+
+p {
+    font-size: 15px;
+    line-height: 15px;
+}
+
+span {
+    font-size: 11px;
+    line-height: 11px;
 }

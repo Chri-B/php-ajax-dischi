@@ -2,6 +2,9 @@ header {
     height: 70px;
     background-color: $tertiary_color;
     padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     #logo {
         height: 100%;

@@ -17,12 +17,32 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }
 
 img {
   height: 100%;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+p,
+span {
+  color: #666666;
+}
+
+p {
+  font-size: 15px;
+  line-height: 15px;
+}
+
+span {
+  font-size: 11px;
+  line-height: 11px;
 }
 
 /* HEADER */
@@ -31,6 +51,9 @@ header {
   height: 70px;
   background-color: #000;
   padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header #logo {
@@ -42,18 +65,57 @@ header #logo {
 
 main {
   height: calc(100vh - 70px - 50px);
+  overflow-y: auto;
+}
+
+main .container {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .container .card {
+  height: 350px;
+  width: calc(100% / 4);
+  padding: 10px;
+}
+
+main .container .card .card-content {
+  text-align: center;
+  height: 100%;
+  background-color: #000;
+  overflow-y: auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+main .container .card .card-content .copertina {
+  height: 60%;
+  padding: 10px;
+}
+
+main .container .card .card-content .copertina img {
+  width: 100%;
+}
+
+main .container .card .card-content .text {
+  padding: 10px 0;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 /* FOOTER */
 
 footer {
   height: 50px;
-  background-color: #000;
   text-align: center;
+  background: #000;
 }
 
-footer .credits {
-  height: 100%;
+footer .credits p {
   line-height: 50px;
 }
 
