@@ -1,5 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "_variables.scss";
+/* MIXINS */
+@import "_mixins.scss";
+/* RESET */
+@import "_reset.scss";
+/* COMMON */
+@import "_common.scss";
+/* HEADER */
+@import "partials/_header";
+/* MAIN */
+@import "partials/_main";
+/* FOOTER */
+@import "partials/_footer";

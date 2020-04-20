@@ -1,6 +1,59 @@
+/* MIXINS */
+
+/* RESET */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* COMMON */
+
+body {
+  font-family: "Baloo Bhaina 2", cursive;
+  color: #ffffff;
+  background-color: #282828;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  height: 100%;
+}
+
+/* HEADER */
+
+header {
+  height: 70px;
+  background-color: #000;
+  padding: 0 20px;
+}
+
+header #logo {
+  height: 100%;
+  padding: 10px;
+}
+
+/* MAIN */
+
+main {
+  height: calc(100vh - 70px - 50px);
+}
+
+/* FOOTER */
+
+footer {
+  height: 50px;
+  background-color: #000;
+  text-align: center;
+}
+
+footer .credits {
+  height: 100%;
+  line-height: 50px;
 }
 

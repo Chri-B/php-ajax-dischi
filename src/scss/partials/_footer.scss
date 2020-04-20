@@ -1,0 +1,10 @@
+footer {
+    height: 50px;
+    background-color: $tertiary_color;
+    text-align: center;
+    
+    .credits {
+        height: 100%;
+        line-height: 50px;
+    }
+}
