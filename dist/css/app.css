@@ -1,5 +1,9 @@
 /* MIXINS */
 
+/* mixin per media query */
+
+/* stile card */
+
 /* RESET */
 
 * {
@@ -17,7 +21,7 @@ body {
 }
 
 .container {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -69,6 +73,7 @@ main {
 }
 
 main .container {
+  max-width: 1200px;
   padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
@@ -78,6 +83,7 @@ main .container {
 main .container .card {
   height: 350px;
   width: calc(100% / 4);
+  max-width: 250px;
   padding: 10px;
 }
 
@@ -105,6 +111,24 @@ main .container .card .card-content .text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 992px) {
+  main .container .card {
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .container .card {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .container .card {
+    width: calc(100%);
+  }
 }
 
 /* FOOTER */

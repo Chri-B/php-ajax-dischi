@@ -65,7 +65,7 @@
                 </div>
             </div>
         </script>
-        
+
         <!-- link a script JS -->
         <script src="dist/js/main.js" charset="utf-8"></script>
         <!-- FINE VERSIONE DATABASE CODIFICATO IN SERVER.PHP => RICHIAMATO DA JS => STAMPATO TRAMITE HANDLEBARS IN HTML -->
