@@ -21,6 +21,25 @@
         </header>
         <main>
             <div id="card-container" class="container">
+                <!-- VERSIONE PHP USATO DIRETTAMENTE IN HTML -->
+                <!-- <?php
+                    include 'data.php';
+                ?>
+                <?php foreach ($albums as $key => $album) {; ?>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="copertina">
+                                <img src="<?php echo $album['cover']; ?>" alt="<?php echo $album['album']; ?>">
+                            </div>
+                            <div class="text">
+                                <h2><?php echo $album['album']; ?></h2>
+                                <p><?php echo $album['autore']; ?>}</p>
+                                <span><?php echo $album['anno']; ?></span>
+                            </div>
+                        </div>
+                    </div>
+                <?php }; ?> -->
+                <!-- FINE VERSIONE PHP USATO DIRETTAMENTE IN HTML -->
             </div>
         </main>
         <footer>
@@ -31,7 +50,7 @@
             </div>
         </footer>
 
-
+        <!-- VERSIONE DATABASE CODIFICATO IN SERVER.PHP => RICHIAMATO DA JS => STAMPATO TRAMITE HANDLEBARS IN HTML -->
         <script id="card-template" type="text/x-handlebars-template">
             <div class="card">
                 <div class="card-content">
@@ -46,8 +65,9 @@
                 </div>
             </div>
         </script>
-
-
+        
+        <!-- link a script JS -->
         <script src="dist/js/main.js" charset="utf-8"></script>
+        <!-- FINE VERSIONE DATABASE CODIFICATO IN SERVER.PHP => RICHIAMATO DA JS => STAMPATO TRAMITE HANDLEBARS IN HTML -->
     </body>
 </html>
